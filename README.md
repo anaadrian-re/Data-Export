@@ -6,6 +6,7 @@ Internal script for pulling paginated data from the Data Export API.
 
 - [main.py](main.py): requests the export, polls until data is ready, paginates through `NextToken`, and writes JSON output to `data/`
 - [.env.example](.env.example): template for local configuration
+- [requirements.txt](requirements.txt): Python dependencies
 
 ## Setup
 
@@ -14,6 +15,11 @@ Internal script for pulling paginated data from the Data Export API.
 3. Set `X-CG-API-Secret=` to your API secret.
 4. Set `X-CG-School=` to your school code.
 5. Set `endpoint=` to one of the values listed in the Allowed Endpoints section below.
+6. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 Example `.env`:
 
